@@ -3,86 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamus Istilah OSN IPS & Soshum - belajarIPSeru</title>
+    <title>belajarIPSeru - Platform IPS & OSN</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Kamus Istilah OSN IPS & Soshum</h1>
-        <p>Persiapan OSN IPS SMP, Geografi, Ekonomi, & Sosiologi SMA</p>
+        <h1>belajarIPSeru</h1>
+        <p>Platform Belajar IPS SMP, Soshum SMA, & Persiapan OSN</p>
         
-        <!-- KOLOM PENCARIAN -->
-        <div class="search-box">
-            <input type="text" id="searchInput" onkeyup="searchTerm()" placeholder="Cari istilah OSN (misal: Geosfer, Inflasi, Mobilitas)...">
-        </div>
+        <!-- TOMBOL FITUR UNTUK BERPINDAH HALAMAN -->
+        <nav class="main-nav">
+            <button onclick="switchTab('materi')" id="btn-materi" class="nav-btn active">📚 Materi Kelas</button>
+            <button onclick="switchTab('kamus')" id="btn-kamus" class="nav-btn">🔍 Fitur Kamus IPS & OSN</button>
+        </nav>
     </header>
 
     <main class="container">
-        <div id="kamusList">
-
-            <!-- ISTILAH GEOGRAFI / IPS -->
+        
+        <!-- HALAMAN 1: MATERI KELAS -->
+        <div id="section-materi" class="page-section">
+            <h2>Materi Pelajaran IPS & Soshum</h2>
+            
             <div class="term-card">
-                <h3>Geosfer</h3>
-                <span class="badge geo">Geografi</span>
-                <p>Lapisan-lapisan yang mencakup seluruh komponen fisik dan non-fisik di permukaan bumi, terdiri dari atmosfer, litosfer, hidrosfer, biosfer, dan antroposfer.</p>
+                <h3>Kelas 7 - IPS (Kurikulum Merdeka)</h3>
+                <p><strong>Bab 1: Manusia, Tempat, dan Lingkungan</strong></p>
+                <p>Keberadaan diri dan keluarga, interaksi antarruang, serta pemahaman dasar peta dan komponennya.</p>
             </div>
 
             <div class="term-card">
-                <h3>Aglomerasi</h3>
-                <span class="badge geo">Geografi</span>
-                <p>Kecenderungan pemusatan kegiatan spasial/ekonomi pada suatu wilayah tertentu (misal: kawasan industri atau pemukiman kumuh).</p>
-            </div>
-
-            <!-- ISTILAH EKONOMI -->
-            <div class="term-card">
-                <h3>Ceteris Paribus</h3>
-                <span class="badge eko">Ekonomi</span>
-                <p>Asumsi dalam ilmu ekonomi bahwa faktor-faktor lain selain harga dianggap tetap atau tidak berubah.</p>
+                <h3>Kelas 8 - IPS</h3>
+                <p><strong>Bab 1: Interaksi Spasial Negara ASEAN</strong></p>
+                <p>Sejarah berdirinya ASEAN, kondisi geografis negara anggota, serta konsep mobilitas sosial masyarakat.</p>
             </div>
 
             <div class="term-card">
-                <h3>Opportunity Cost (Biaya Peluang)</h3>
-                <span class="badge eko">Ekonomi</span>
-                <p>Nilai barang atau kesempatan terbaik yang dikorbankan karena memilih alternatif keputusan lain.</p>
+                <h3>Kelas 9 - IPS</h3>
+                <p><strong>Bab 1: Perubahan Sosial Budaya & Globalisasi</strong></p>
+                <p>Dampak globalisasi, modernisasi, serta perubahan nilai dan norma dalam kehidupan masyarakat.</p>
             </div>
 
             <div class="term-card">
-                <h3>Inflasi</h3>
-                <span class="badge eko">Ekonomi</span>
-                <p>Proses kenaikan harga-harga barang dan jasa secara umum dan terus-menerus dalam jangka waktu tertentu.</p>
+                <h3>Kelas 10 - Soshum SMA</h3>
+                <p><strong>Geografi, Ekonomi, & Sosiologi</strong></p>
+                <p>Konsep dasar geosfer, teori kelangkaan ekonomi, biaya peluang, serta norma dan interaksi sosial.</p>
             </div>
-
-            <!-- ISTILAH SOSIOLOGI -->
-            <div class="term-card">
-                <h3>Interaksi Sosial</h3>
-                <span class="badge sos">Sosiologi</span>
-                <p>Hubungan timbal balik antara individu dengan individu, individu dengan kelompok, atau kelompok dengan kelompok.</p>
-            </div>
-
-            <div class="term-card">
-                <h3>Anomi</h3>
-                <span class="badge sos">Sosiologi</span>
-                <p>Kondisi masyarakat tanpa arah dan tanpa norma yang jelas akibat perubahan sosial yang terlalu cepat.</p>
-            </div>
-
         </div>
+
+        <!-- HALAMAN 2: FITUR KAMUS IPS & OSN -->
+        <div id="section-kamus" class="page-section" style="display: none;">
+            <h2>Fitur Kamus Istilah IPS & OSN</h2>
+            <p>Cari definisi istilah OSN IPS, Geografi, Ekonomi, dan Sosiologi secara instan.</p>
+            
+            <!-- KOLOM PENCARIAN -->
+            <div class="search-box">
+                <input type="text" id="searchInput" onkeyup="searchTerm()" placeholder="Ketik kata kunci (misal: Geosfer, Inflasi, Mobilitas)...">
+            </div>
+
+            <!-- DAFTAR ISTILAH -->
+            <div id="kamusList" style="margin-top: 25px;">
+                <div class="term-card search-item">
+                    <h3>Geosfer</h3>
+                    <span class="badge geo">Geografi</span>
+                    <p>Lapisan-lapisan bumi yang mencakup atmosfer, litosfer, hidrosfer, biosfer, dan antroposfer.</p>
+                </div>
+
+                <div class="term-card search-item">
+                    <h3>Aglomerasi</h3>
+                    <span class="badge geo">Geografi</span>
+                    <p>Kecenderungan pemusatan kegiatan ekonomi atau pemukiman pada suatu wilayah tertentu.</p>
+                </div>
+
+                <div class="term-card search-item">
+                    <h3>Ceteris Paribus</h3>
+                    <span class="badge eko">Ekonomi</span>
+                    <p>Asumsi dalam ilmu ekonomi bahwa faktor-faktor lain dianggap tetap atau tidak berubah.</p>
+                </div>
+
+                <div class="term-card search-item">
+                    <h3>Opportunity Cost (Biaya Peluang)</h3>
+                    <span class="badge eko">Ekonomi</span>
+                    <p>Nilai barang atau kesempatan terbaik yang dikorbankan karena memilih alternatif lain.</p>
+                </div>
+
+                <div class="term-card search-item">
+                    <h3>Anomi</h3>
+                    <span class="badge sos">Sosiologi</span>
+                    <p>Kondisi masyarakat tanpa norma yang jelas akibat perubahan sosial yang terlalu cepat.</p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <!-- SCRIPT LOGIKA PENCARIAN -->
+    <!-- KODE LOGIKA NAVIGASI & PENCARIAN -->
     <script>
+    function switchTab(tabName) {
+        if (tabName === 'materi') {
+            document.getElementById('section-materi').style.display = 'block';
+            document.getElementById('section-kamus').style.display = 'none';
+            document.getElementById('btn-materi').classList.add('active');
+            document.getElementById('btn-kamus').classList.remove('active');
+        } else {
+            document.getElementById('section-materi').style.display = 'none';
+            document.getElementById('section-kamus').style.display = 'block';
+            document.getElementById('btn-kamus').classList.add('active');
+            document.getElementById('btn-materi').classList.remove('active');
+        }
+    }
+
     function searchTerm() {
         let input = document.getElementById('searchInput').value.toLowerCase();
-        let cards = document.getElementsByClassName('term-card');
+        let items = document.getElementsByClassName('search-item');
 
-        for (let i = 0; i < cards.length; i++) {
-            let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-            let desc = cards[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+        for (let i = 0; i < items.length; i++) {
+            let title = items[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+            let desc = items[i].getElementsByTagName('p')[0].innerText.toLowerCase();
 
             if (title.includes(input) || desc.includes(input)) {
-                cards[i].style.display = "block";
+                items[i].style.display = "block";
             } else {
-                cards[i].style.display = "none";
+                items[i].style.display = "none";
             }
         }
     }
