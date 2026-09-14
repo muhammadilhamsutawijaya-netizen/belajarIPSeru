@@ -3,79 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi IPS & Soshum - Belajar IPS eru</title>
+    <title>Kamus Istilah OSN IPS & Soshum - belajarIPSeru</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Materi Pelajaran IPS & Soshum</h1>
-        <p>Platform Belajar IPS SMP (Kelas 7-9) & Soshum SMA (Kelas 10-12) Kurikulum Merdeka</p>
-        <nav>
-            <a href="#kelas7">Kelas 7</a>
-            <a href="#kelas8">Kelas 8</a>
-            <a href="#kelas9">Kelas 9</a>
-            <a href="#kelas10">Kelas 10</a>
-        </nav>
+        <h1>Kamus Istilah OSN IPS & Soshum</h1>
+        <p>Persiapan OSN IPS SMP, Geografi, Ekonomi, & Sosiologi SMA</p>
+        
+        <!-- KOLOM PENCARIAN -->
+        <div class="search-box">
+            <input type="text" id="searchInput" onkeyup="searchTerm()" placeholder="Cari istilah OSN (misal: Geosfer, Inflasi, Mobilitas)...">
+        </div>
     </header>
 
     <main class="container">
-        <!-- KELAS 7 -->
-        <section id="kelas7" class="card">
-            <h2>Kelas 7 - IPS (Kurikulum Merdeka)</h2>
-            <hr>
-            <h3>Bab 1: Manusia, Tempat, dan Lingkungan</h3>
-            <p><strong>A. Keberadaan Diri dan Keluarga</strong></p>
-            <p>Setiap manusia hidup dalam ruang dan lingkungan tempat tinggal. Keluarga merupakan unit sosial terkecil dalam masyarakat yang menjadi tempat pertama pembentukan karakter.</p>
+        <div id="kamusList">
 
-            <p><strong>B. Interaksi Antarruang</strong></p>
-            <ul>
-                <li><strong>Pengertian Ruang:</strong> Tempat di permukaan bumi, baik secara keseluruhan maupun hanya sebagian yang digunakan oleh makhluk hidup untuk tinggal.</li>
-                <li><strong>Kondisi Saling Bergantung:</strong> Interaksi terjadi karena adanya perbedaan potensi wilayah (saling melengkapi / <i>complementarity</i>).</li>
-            </ul>
+            <!-- ISTILAH GEOGRAFI / IPS -->
+            <div class="term-card">
+                <h3>Geosfer</h3>
+                <span class="badge geo">Geografi</span>
+                <p>Lapisan-lapisan yang mencakup seluruh komponen fisik dan non-fisik di permukaan bumi, terdiri dari atmosfer, litosfer, hidrosfer, biosfer, dan antroposfer.</p>
+            </div>
 
-            <p><strong>C. Peta dan Komponennya</strong></p>
-            <p>Peta adalah gambaran permukaan bumi pada bidang datar yang diperkecil dengan skala. Komponen utama peta meliputi judul, skala, petunjuk arah, simbol, dan legenda.</p>
-        </section>
+            <div class="term-card">
+                <h3>Aglomerasi</h3>
+                <span class="badge geo">Geografi</span>
+                <p>Kecenderungan pemusatan kegiatan spasial/ekonomi pada suatu wilayah tertentu (misal: kawasan industri atau pemukiman kumuh).</p>
+            </div>
 
-        <!-- KELAS 8 -->
-        <section id="kelas8" class="card">
-            <h2>Kelas 8 - IPS</h2>
-            <hr>
-            <h3>Bab 1: Interaksi Spasial dalam Kehidupan di Negara-Negara ASEAN</h3>
-            <p><strong>A. Mengenal Negara-Negara ASEAN</strong></p>
-            <p>ASEAN (Association of Southeast Asian Nations) didirikan pada 8 Agustus 1967 di Bangkok melalui Deklarasi Bangkok oleh 5 negara pendiri: Indonesia, Malaysia, Filipina, Singapura, dan Thailand.</p>
+            <!-- ISTILAH EKONOMI -->
+            <div class="term-card">
+                <h3>Ceteris Paribus</h3>
+                <span class="badge eko">Ekonomi</span>
+                <p>Asumsi dalam ilmu ekonomi bahwa faktor-faktor lain selain harga dianggap tetap atau tidak berubah.</p>
+            </div>
 
-            <p><strong>B. Mobilitas Sosial</strong></p>
-            <p>Mobilitas sosial adalah perpindahan posisi seseorang atau kelompok dari kedudukan sosial yang satu ke kedudukan sosial yang lain. Terdiri dari mobilitas vertikal (naik/turun) dan mobilitas horizontal.</p>
-        </section>
+            <div class="term-card">
+                <h3>Opportunity Cost (Biaya Peluang)</h3>
+                <span class="badge eko">Ekonomi</span>
+                <p>Nilai barang atau kesempatan terbaik yang dikorbankan karena memilih alternatif keputusan lain.</p>
+            </div>
 
-        <!-- KELAS 9 -->
-        <section id="kelas9" class="card">
-            <h2>Kelas 9 - IPS</h2>
-            <hr>
-            <h3>Bab 1: Perubahan Sosial Budaya dan Globalisasi</h3>
-            <p><strong>A. Perubahan Sosial Budaya</strong></p>
-            <p>Perubahan yang terjadi pada unsur-unsur sosial dan budaya dalam masyarakat, meliputi nilai, sikap, dan pola perilaku.</p>
-            <p><strong>B. Globalisasi</strong></p>
-            <p>Proses menyatunya masyarakat dunia secara global tanpa terhalang oleh batas wilayah negara, baik dalam bidang ekonomi, komunikasi, iptek, maupun budaya.</p>
-        </section>
+            <div class="term-card">
+                <h3>Inflasi</h3>
+                <span class="badge eko">Ekonomi</span>
+                <p>Proses kenaikan harga-harga barang dan jasa secara umum dan terus-menerus dalam jangka waktu tertentu.</p>
+            </div>
 
-        <!-- KELAS 10 -->
-        <section id="kelas10" class="card">
-            <h2>Kelas 10 - Soshum (Geografi, Ekonomi, Sosiologi)</h2>
-            <hr>
-            <h3>1. Geografi: Konsep Dasar Geografi</h3>
-            <p>Geografi adalah ilmu yang mempelajari persamaan dan perbedaan fenomena geosfer dengan sudut pandang kewilayahan dan kelingkungan dalam konteks keruangan.</p>
+            <!-- ISTILAH SOSIOLOGI -->
+            <div class="term-card">
+                <h3>Interaksi Sosial</h3>
+                <span class="badge sos">Sosiologi</span>
+                <p>Hubungan timbal balik antara individu dengan individu, individu dengan kelompok, atau kelompok dengan kelompok.</p>
+            </div>
 
-            <h3>2. Ekonomi: Kelangkaan dan Kebutuhan Manusia</h3>
-            <p>Kelangkaan (scarcity) adalah kondisi di mana kebutuhan manusia yang tidak terbatas dihadapkan pada alat pemuas kebutuhan yang terbatas jumlahnya.</p>
-        </section>
+            <div class="term-card">
+                <h3>Anomi</h3>
+                <span class="badge sos">Sosiologi</span>
+                <p>Kondisi masyarakat tanpa arah dan tanpa norma yang jelas akibat perubahan sosial yang terlalu cepat.</p>
+            </div>
+
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 belajarIPSeru - Dikelola oleh Muhammad Ilham Sutawijaya</p>
-    </footer>
+    <!-- SCRIPT LOGIKA PENCARIAN -->
+    <script>
+    function searchTerm() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let cards = document.getElementsByClassName('term-card');
+
+        for (let i = 0; i < cards.length; i++) {
+            let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+            let desc = cards[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+
+            if (title.includes(input) || desc.includes(input)) {
+                cards[i].style.display = "block";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+    </script>
 
 </body>
 </html>
