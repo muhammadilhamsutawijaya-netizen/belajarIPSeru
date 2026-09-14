@@ -10,22 +10,60 @@ header {
     background-color: #1a365d;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px 20px 20px;
 }
 
-.search-box {
-    margin-top: 20px;
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0 0 20px 0;
+    opacity: 0.9;
+}
+
+/* GAYA TOMBOL FITUR NAVIGASI */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.nav-btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn.active {
+    background-color: white;
+    color: #1a365d;
 }
 
 .search-box input {
-    width: 80%;
-    max-width: 500px;
-    padding: 12px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 20px;
     font-size: 16px;
-    border: none;
-    border-radius: 25px;
+    border: 2px solid #e2e8f0;
+    border-radius: 30px;
     outline: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.search-box input:focus {
+    border-color: #3182ce;
 }
 
 .container {
@@ -37,25 +75,26 @@ header {
 .term-card {
     background: white;
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     border-left: 5px solid #3182ce;
 }
 
 .term-card h3 {
-    margin: 0 0 5px 0;
-    color: #2b6cb0;
+    margin: 0 0 6px 0;
+    color: #1a202c;
 }
 
 .badge {
     display: inline-block;
     padding: 3px 8px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     color: white;
     border-radius: 5px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .badge.geo { background-color: #2e7d32; }
